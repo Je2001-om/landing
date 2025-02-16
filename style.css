@@ -12,8 +12,8 @@
     display: flex;
     margin: -8px;
     align-items: center;
-   
-
+   max-width: 100%;
+height: auto;
 }
 .header .logo {
 
@@ -68,19 +68,17 @@ font-size: 15px;
     margin-left: 438px;
 }
 /*.sec2*/
-.main {
+.container2 {
     position: relative;
-    width: fit-content;
-    display: inline-block;
+    max-width: 100%;
+    
 }
 
 .img1 {
-    padding: 8px;
-    width: 1584px;
-    margin-left: -16px;
-    display: block;
+    padding: 20px 100px;
+    max-width: 100%;
 }
-.main h2 {
+.container2 h2 {
 
     position: absolute;
   top: 48%;
@@ -95,7 +93,7 @@ font-size: 15px;
 
 
 
-.main p {
+.container2 p {
     position: absolute;
   top: 62%;
   left: 29%;
@@ -107,7 +105,7 @@ font-family: Arial, serif;
 }
 
 
-.main button {
+.container2 button {
     position: absolute;
     top: 72%;
     transform: translateY(-50%);
@@ -119,30 +117,31 @@ font-family: Arial, serif;
     font-size: 16px;
 }
 
-.main .btn1 {
+.container2 .btn1 {
     left: 9%; 
     background-color: rgba(29, 161, 122, 0.877); 
 }
 
-.main .btn2 {
+.container2 .btn2 {
     left: 21%; 
     background-color:rgba(255, 141, 20, 0.88);
 }
 
 /*.sec3*/
-.mpart2 {
-    width: fit-content;
+.container3 {
+   max-width: 100% ;
+   height: auto;
     display: flex;
     align-items: center;
-margin-top: 52px;
+
     
 }
-.mpart2 .img2{
+.container3 .img2{
 
     margin-left: 92px;
   margin-top: 58px;
 }
-.mpart2 .img3{
+.container3 .img3{
 
     transform: translate(2% , -109%);
   margin-left: 48px;
@@ -154,7 +153,7 @@ margin-top: 52px;
     margin-top: 35px;
 }
 
-.mpart2 .text h3{
+.container3 .text h3{
     font-size: 35px;
     font-weight: bold;
     padding: 10px 20px;
@@ -165,7 +164,7 @@ margin-top: 52px;
 
 
 
-.mpart2 .text  p{
+.container3 .text  p{
     font-size: 14px;
     padding: 10px 20px;
   font-family: Arial, serif;
@@ -239,7 +238,7 @@ font-size:13px ;
 }
 
 
-/*section4*/
+/*section5*/
 
 .text3{
     
@@ -324,7 +323,7 @@ color: white;
 margin-top: 30px;
 }
 
-.container2{
+.container7{
 
     display: grid;
     justify-content: center;
@@ -435,7 +434,7 @@ margin-top: 30px;
 }
 
 
-.container3{
+.container8{
  
 
     display: flex;
@@ -535,10 +534,6 @@ font-size: 22px;
 
 }
 
-.mainletter9 p{
-
-  margin-top: ;
-}
 
 
 .thirdpart{
@@ -659,6 +654,29 @@ background-color: #4F5B67;
   display: flex;
   justify-content: space-around;
   color:#5e6062;
+}
+
+.container{
+
+  width:80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .container {
+      width: 95%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .container {
+      width: 100%;
+      padding: 10px;
+  }
 }
 
 
